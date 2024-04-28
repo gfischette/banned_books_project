@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>{{ info["district"] }}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans&family=Mate&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/district.css') }}">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('panhandle') }}">Florida Panhandle</a></li>
+            <li><a href="{{ url_for('north') }}">North Florida</a></li>
+            <li><a href="{{ url_for('south') }}">South Florida</a></li>
+            <li><a href="{{ url_for('central') }}">Central Florida</a></li>
+            <li><a href="{{ url_for('other') }}">Other</a></li>
+        </ul>
+    </nav>
+
+
+
+    <h1>{{ info["district"] }} District</h1>
+
+    <h3>Areas Covered: {{ info["areas"] }}</h3>
+
+    <p id="squish">Number of Books Banned or Challenged:</p>
+    <p id="number"><b><i>{{ info["number_books"] }}</i> </b></p>
+
+<div id="bookone">
+
+    {% if info['title_one'] == 'None' %}
+        <p>This district does not have any reported titles that were banned or challenged.</p>
+    {% elif info['title_one'] != 'None' %}
+        <p>{{ info['title_one'] }}</p>
+    {% endif %}
+
+    {% if info['author_one'] == 'None' %}
+        <p></p>
+    {% elif info['author_one'] != 'None' %}
+        <p>{{ info['author_one'] }}</p>
+    {% endif %}
+
+    {% if info['cover_one'] == 'None' %}
+        <p></p>
+    {% elif info['cover_one'] != 'None' %}
+        <img src="{{ url_for('static', filename='images/' + info['cover_one']) }}" alt="Image of book cover">
+    {% endif %}
+
+    {% if info['summary_one'] == 'None' %}
+        <p></p>
+    {% elif info['summary_one'] != 'None' %}
+        <p class="summary">{{ info['summary_one'] }}</p>
+    {% endif %}
+
+    {% if info['link_one'] == 'None' %}
+        <p></p>
+    {% elif info['link_one'] != 'None' %}
+        <p class="summary"><a href="{{ info['link_one'] }}">All information about this book is from this link.</a></p>
+    {% endif %}
+
+</div>
+
+<div id="booktwo">
+
+    {% if info['title_two'] == 'None' %}
+        <p><i>This does not necessarily mean there have been no books banned in {{ info['district'] }}.</i> Rather, that no person from this district has reported any banned books or books in the process of being banned.</p>
+    {% elif info['title_two'] == 'One' %}
+        <p></p>
+    {% elif info['title_two'] != 'None' %}
+        <p>{{ info['title_two'] }}</p>
+    {% endif %}
+
+    {% if info['author_two'] == 'None' %}
+        <p></p>
+    {% elif info['author_two'] == 'One' %}
+        <p></p>
+    {% elif info['author_two'] != 'None' %}
+        <p>{{ info['author_two'] }}</p>
+    {% endif %}
+
+    {% if info['cover_two'] == 'None' %}
+        <p></p>
+    {% elif info['cover_two'] == 'One' %}
+        <p></p>
+    {% elif info['cover_two'] != 'None' %}
+        <img src="{{ url_for('static', filename='images/' + info['cover_two']) }}" alt="Image of book cover">
+    {% endif %}
+
+    {% if info['summary_two'] == 'None' %}
+        <p></p>
+    {% elif info['summary_two'] == 'One' %}
+        <p></p>
+    {% elif info['summary_two'] != 'None' %}
+        <p class="summary">{{ info['summary_two'] }}</p>
+    {% endif %}
+
+    {% if info['link_two'] == 'None' %}
+        <p></p>
+    {% elif info['link_two'] == 'One' %}
+        <p></p>
+    {% elif info['link_two'] != 'None' %}
+        <p class="summary"><a href="{{ info['link_two'] }}">All information about this book is from this link.</a></p>
+    {% endif %}
+
+    <p id="back"><a href="{{ url_for('about') }}">Return to the about page</a> to learn more about the process of book banning.</p>
+    
+    
+</div>
+
+<footer>
+    
+This page was created by Gabrielle Fischette for a school project. Find the GitHub repo for this page here.
+
+</footer>
+    
+</body>
+</html>

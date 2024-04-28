@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Book Banning</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Mate&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans&family=Mate&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+
+</head>
+<body>
+
+<div id="page1">
+
+<h3>How it Works</h3>
+
+<p>First, the public, as well as school officials, can send in challenges for specific books they believe should be banned based on their content. Then, the district holds a public meeting with district school committees where the book challenge is discussed and either agreed upon or thrown out. If it is agreed to be material that should be banned, it is sent to the school board where the final decision on whether the book will be pulled from school shelves is made.</p><br>
+	
+<p>While there is not specific standardization on the rules of this for all districts, there is consistency in that most of them followed similarly to the above process.</p>
+
+<h3>Methodology</h3>
+
+<p>During my search, I found a list of books banned by each school district as of October 2023. This list covered around 40 of the districts and said the others did not have any data at that point on banned books. I then researched all the other districts and found that about 10-15 of them had reported banned books in recent months, so I currently have around 50-55 districts that have listed the books they banned, as well as information on what titles they banned. </p>
+
+<h3>Learn more about the banned books in each district</h3>
+
+<p>Click which region of Florida you are most interested in to learn about the districts and some of the books banned in those areas. On each district's page, there will be information on the cities covered by that school district, about how many books have either been banned or challenged in each distrct based on reports, and 1-2 examples of the books banned in the specific district.</p>
+
+<p id="pan"><a href="{{ url_for('panhandle') }}">Florida Panhandle</a></p>
+<p id="north"><a href="{{ url_for('north') }}">North Florida</a></p>
+<p id="south"><a href="{{ url_for('south') }}">South Florida</a></p>
+<p id="central"><a href="{{ url_for('central') }}">Central Florida</a></p>
+<p id="other"><a href="{{ url_for('other') }}">Other</a></p>
+
+<div id="sources">
+
+<h3>Sources</h3>
+
+<p>Information about banned books in the Florida school districts comes mainly from <a href="https://pen.org/2023-banned-book-list/" target="_blank">PEN America</a>, <a href="https://www.miaminewtimes.com/news/more-than-350-books-banned-in-florida-schools-since-last-july-16817328" target="_blank">the Miami New Times</a>, and the <a href="https://web03.fldoe.org/Schools/schoolmap_text.asp" target="_blank">Florida Department of Education</a>. Additional information comes from <a href="https://news.wgcu.org/top-story/2023-10-13/nearly-80-book-titles-pulled-from-charlotte-county-public-school-libraries-for-district-review" target="_blank">WGCU</a>, <a href="https://www.tampabay.com/news/education/2024/03/04/pasco-panel-votes-restrict-lgbtq-book-essays-high-schools/" target="_blank">the Tampa Bay Times</a>, <a href="https://nypost.com/2023/07/12/moms-for-liberty-gets-5-inappropriate-books-removed-from-florida-schools/" target="_blank"> the New York Post</a>, and <a href="https://www.firstcoastnews.com/article/news/education/nassau-county-school-district-removes-34-books-from-library-classroom-shelves-the-bluest-eye-the-hate-you-give/77-9c9b3d77-d6b6-4799-8a31-ced30609a19c" target="_blank">First Coast News</a>.</p>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>This page was created by Gabrielle Fischette for a school project. Find the GitHub repo for this page here.</p>
+
+</footer>
+    
+</body>
+</html>

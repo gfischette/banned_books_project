@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+} 
+
+* {
+    box-sizing: inherit;
+} 
+
+body {
+    background-color: #454A52;
+    font-family: 'IBM Plex Mono', 'Mate', 'Lucida Bright', 'Times New Roman', serif;
+    margin: 1rem 0;
+}
+
+h1, h3 {
+    font-family: 'IBM Plex Mono', 'Josefin Sans', 'Verdana', 'Futura', sans-serif;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+#page1, #page2 {
+    background-color: #f4f0ec;
+    margin: auto;
+    max-width: 550px;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+#pan {
+    background-color: #dcdcdc;
+    max-width: 175px;
+    border-style: outset; 
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 3rem auto 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#north, #south, #central, #other {
+    background-color: #dcdcdc;
+    max-width: 175px;
+    border-style: outset; 
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#sources {
+    margin: 5rem 0 2rem 0;
+}
+
+#north a, #south a, #central a, #other a, #pan a {
+    text-decoration: none;
+}
+
+p {
+    max-width: 400px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+
+#intro, #attribution {
+    text-align: center;
+    line-height: 1.7rem;
+}
+
+ol {
+    line-height: 2rem;
+
+}
+
+a {
+    color: #000;
+}
+
+footer p {
+    color: #fff;
+    margin: 5rem auto 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        margin: 0;
+    }
+}

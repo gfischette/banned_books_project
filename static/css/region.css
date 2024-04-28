@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+} 
+
+* {
+    box-sizing: inherit;
+} 
+
+body {
+    font-family: 'IBM Plex Mono', 'Mate', 'Lucida Bright', 'Times New Roman', serif;
+    margin: 1rem 0;
+    background: #fff;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', 'Josefin Sans', 'Verdana', 'Futura', sans-serif;
+    text-align: center;
+    padding: 0.5rem 0.5rem 2rem;
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #f1f1f1;
+    margin: 1rem 0;
+  }
+
+#page1 {
+    background-color: #454A52;
+    margin: 9rem auto;
+    max-width: 550px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-style:ridge;
+}
+
+form {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+input[type=button], input[type=submit] {
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 560px) {
+    body {
+        margin: 0;
+        background-color: #454A52;
+        border-style: none;
+    }
+    #page1 {
+        border-style: none;
+    }
+   
+}
