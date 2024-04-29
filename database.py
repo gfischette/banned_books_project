@@ -1,4 +1,5 @@
 import pymysql
+import os
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.sql import text
@@ -10,15 +11,15 @@ from wtforms import SubmitField, SelectField
 db = SQLAlchemy()
 app = Flask(__name__)
 
-username = 'root'
-password = ''
-userpass = 'mysql+pymysql://' + username + ':' + password + '@'
-server   = '127.0.0.1'
-dbname   = '/projectdatabase'
 
-socket   = ''
-app.config['SQLALCHEMY_DATABASE_URI'] = userpass + server + dbname + socket
+if not os.getenv("DATABASE_URL"):
+    raise RuntimeError("DATABASE_URL is not set")
+
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
+
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+
+
 app.config['SECRET_KEY'] = 'NUIW8R28INHDIRH38'
 
 db.init_app(app)

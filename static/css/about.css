@@ -85,6 +85,14 @@ footer p {
     text-align: center;
 }
 
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #dbdbdb;
+}
+
 @media screen and (max-width: 750px) {
     body {
         margin: 0;
