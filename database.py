@@ -26,7 +26,7 @@ db.init_app(app)
 
 
 class Info(db.Model):
-    __tablename__ = 'information'
+    __tablename__ = 'finaldetails'
     id = db.Column(db.Integer, primary_key=True)
     district = db.Column(db.String)
     areas = db.Column(db.String)
