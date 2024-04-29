@@ -104,6 +104,10 @@ footer {
         margin-left: 1rem;
         font-size: 0.6rem;
     }
+    #back {
+        padding: 1rem;
+    }
+
   }
 
 
