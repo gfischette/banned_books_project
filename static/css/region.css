@@ -48,6 +48,11 @@ input[type=button], input[type=submit] {
   padding: 0.5rem 1rem;
 }
 
+footer {
+    text-align: center;
+    padding: 4rem 0.5rem 0 0.5rem;
+}
+
 @media screen and (max-width: 560px) {
     body {
         margin: 0;
@@ -56,6 +61,19 @@ input[type=button], input[type=submit] {
     }
     #page1 {
         border-style: none;
+    }
+    footer {
+        color: #fff;
+        margin: 1rem 0.5rem;
+        text-align: center;
+    }
+    
+    footer a {
+        color: #fff;
+    }
+    
+    footer a:hover {
+        color: #dbdbdb;
     }
    
 }
