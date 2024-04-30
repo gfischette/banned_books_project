@@ -84,7 +84,7 @@ footer a {
     color: #fff;
 }
 
-footer a:hover {
+footer a:hover, #other a:hover {
     color: #dbdbdb;
 }
 
