@@ -49,7 +49,7 @@ h1 {
 
   #open {
     background-color: #454A52;
-    margin: 2rem auto 5rem auto;
+    margin: 4rem auto 6rem auto;
     max-width: 800px;
     padding: 1rem;
     font-size: 1.2rem;
@@ -84,7 +84,7 @@ footer a {
     color: #fff;
 }
 
-footer a:hover, #other a:hover {
+a:hover {
     color: #dbdbdb;
 }
 
