@@ -100,4 +100,7 @@ footer a:hover {
     footer p {
         margin: 3rem auto 1rem auto;
     }
+    footer {
+        margin: 0.5rem;
+      }
 }
